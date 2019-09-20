@@ -1,0 +1,33 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+body {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+ aside {
+     padding: 5%;
+     background-color: rgb(29, 29, 29);
+     color: white;
+ }
+
+aside footer {
+    margin: auto;
+    width: 100%;
+}
+
+ aside footer a {
+    display: block;
+    text-align: center;
+    background-color: olivedrab;
+    padding: 10%;
+ }
+
+ main {
+    background-color: whitesmoke;
+    padding: 5%;
+ }
