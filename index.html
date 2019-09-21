@@ -18,8 +18,12 @@
       <section>
           <h2>Les points essentiels</h2>
           <ul>
-            <li>5 à 10 séances de coaching étalées sur 3 à 5 mois.</li>
-            <li>A Paris et dans sa banlieue sud-ouest, possibilité par Skype de temps à autre.</li>
+            <li itemscope itemtype="http://schema.org/Schedule">
+              <span itemprop="repeatFrequency">5 à 10 séances de coaching étalées sur 3 à 5 mois.</span>
+            </li>
+            <li itemscope itemtype="http://schema.org/Place">
+              <span itemprop="containedInPlace">A Paris et dans sa banlieue sud-ouest</span>, possibilité par Skype de temps à autre.
+            </li>
             <li>
                 Une déontologique impliquant la confidentialité, la
                 bienveillance et la supervision par des coachs seniors.
@@ -41,15 +45,15 @@
           <li>Trouver un nouveau job</li>
         </ul>
       </section>
-      <section>
+      <section itemscope itemtype="http://schema.org/Person">
         <h2>A propos de moi</h2>
-        <p>
+        <p itemprop="knowsAbout">
           Ingénieur de formation, j'ai travaillé plusieurs années dans le domaine du web et du mobile en tant que développeur.
           Au fur et à mesure, j'ai approfondi ma comprehension de l'Agilité et ma sensibilité à la collaboration. Cela fait
           3 ans que j'interviens sur des problèmatiques d'organisation, de collaboration et de bien être en tant
           que facilitateur et coach d'équipe.
         </p>
-        <p>
+        <p itemprop="knowsAbout">
           Je souhaitais consolider cette expertise de coaching avec une formation exigeante. C'est pour cela que j'effectue
           une formation reconnue par l'état chez Linkup Coaching, l'une des écoles les plus réputée dans ce domaine en France.
           Alors que j'ai à présent tout le bagage nécessaire pour être coach professionel, je recherche des personnes pour
@@ -59,11 +63,13 @@
     </main>
     <aside>
         <header>
-          <img src="img/profile.png" />
-          <hgroup>
-            <h2>Romain Lofaso<h2>
-            <h3>Coach</h3>
-            <h4>Certification RNPC Niveau 1 reconnu par l'état</h4>
+          <img alt="Romain Lofaso" src="img/profile.png" />
+          <hgroup itemscope itemtype="http://schema.org/Person">
+            <h2><span itemprop="givenName">Romain</span> <span itemprop="familyName">Lofaso</span></h2>
+            <h3 itemprop="jobTitle">Coach</h3>
+            <h4 itemscope itemtype="http://schema.org/EducationalOccupationalCredential"
+              ><span  itemprop="educationalLevel">Certification RNPC Niveau 1 reconnu par l'état</span>
+            </h4>
           </hgroup>
         </header>
         <footer id="contact-container">
