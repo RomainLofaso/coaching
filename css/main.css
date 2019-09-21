@@ -2,17 +2,22 @@ body {
     max-width: 1000px;
     margin: auto;
     margin-top: 2%;
-}
-
-body {
     display: flex;
     flex-direction: row-reverse;
 }
 
  aside {
+     min-width: 170px;
      padding: 5%;
      background-color: rgb(29, 29, 29);
      color: white;
+ }
+
+ aside img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
  }
 
 aside footer {
@@ -24,10 +29,46 @@ aside footer {
     display: block;
     text-align: center;
     background-color: olivedrab;
-    padding: 10%;
+    padding: 10px;
+ }
+
+ aside footer address {
+    text-align: center;
  }
 
  main {
     background-color: whitesmoke;
     padding: 5%;
  }
+
+ @media only screen and (max-width:700px) {
+    body {
+        margin-top: 0%;
+        flex-direction: column;
+    }
+
+    aside header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    aside header img {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    aside header hgroup {
+        display: block;
+    }
+
+    aside footer a {
+        font-size: 5vw;
+    }
+
+    aside footer address {
+        text-align: center;
+        font-size: 5vw;
+    }
+}
+
